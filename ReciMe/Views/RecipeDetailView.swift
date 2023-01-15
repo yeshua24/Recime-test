@@ -57,8 +57,9 @@ struct RecipeDetailView: View {
                     
                     methodsView
 
-                    tags
-
+                    if !recipe.tags.isEmpty {
+                        tags
+                    }
                 }
                 .padding(.horizontal, 20)
 
